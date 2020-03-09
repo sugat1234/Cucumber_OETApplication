@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="38.124">
+    <testcase classname="Registeration of OET" name="'Given Name' is mandatory for registration" time="37.698">
+        <failure message="expected:&lt;[Required]&gt; but was:&lt;[]&gt;" type="junit.framework.ComparisonFailure">
+            <![CDATA[Given I am on Register page.................................................passed
+And I keep field Given Name blank...........................................passed
+And I enter all other details...............................................passed
+When I click on Next........................................................passed
+Then I get valid error message for Given Name...............................failed
+
+StackTrace:
+junit.framework.ComparisonFailure: expected:<[Required]> but was:<[]>
+	at junit.framework.Assert.assertEquals(Assert.java:100)
+	at junit.framework.Assert.assertEquals(Assert.java:107)
+	at com.StepDefinition.Registration.StepDefinition_Registeration.i_get_valid_error_message_for_Given_Name(StepDefinition_Registeration.java:56)
+	at ✽.I get valid error message for Given Name(file:///C:/Users/sugat/eclipse-workspace/Cucumber-OETApplication/src/test/java/com/Feature/Registration/Registeration.feature:14)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
